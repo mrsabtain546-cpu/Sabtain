@@ -688,3 +688,74 @@ footer p {
     }
 
 }
+/* ================= SERVICES PAGE ================= */
+
+.page-header {
+    text-align: center;
+    padding: 100px 20px 70px;
+}
+
+.page-header .hero-tag {
+    margin-bottom: 12px;
+}
+
+.page-header h1 {
+    margin-bottom: 18px;
+}
+
+.page-header p:last-child {
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+/* Service Lists */
+
+.service-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    text-align: left;
+}
+
+.service-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.service-list li::before {
+    content: "✓ ";
+    font-weight: bold;
+}
+
+
+/* Service Card Hover */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Services Mobile */
+
+@media (max-width: 768px) {
+
+    .page-header {
+        padding: 70px 20px 50px;
+    }
+
+    .page-header h1 {
+        font-size: 34px;
+    }
+
+    .service-list {
+        text-align: left;
+    }
+
+}
