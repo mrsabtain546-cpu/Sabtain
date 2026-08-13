@@ -426,3 +426,23 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+/* Responsive Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+    font-size: 24px;
+}
+
+.logo span {
+    font-size: inherit;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .logo {
+        font-size: 18px;
+        gap: 4px;
+    }
+}
