@@ -836,3 +836,62 @@ footer p {
     }
 
 }
+/* ================= PORTFOLIO PAGE ================= */
+
+.project-category {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.project-tags span {
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* Portfolio Cards */
+
+.portfolio-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.portfolio-top {
+    text-align: center;
+}
+
+
+/* Portfolio Mobile */
+
+@media (max-width: 768px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-info {
+        padding: 22px;
+    }
+
+    .project-tags {
+        gap: 6px;
+    }
+
+}
