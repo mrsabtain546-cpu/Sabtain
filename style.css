@@ -759,3 +759,80 @@ footer p {
     }
 
 }
+/* ================= ABOUT PAGE ================= */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.about-highlight {
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-highlight h3 {
+    margin-bottom: 15px;
+}
+
+.about-highlight p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-item {
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-item strong {
+    font-size: 18px;
+}
+
+.skill-item span {
+    line-height: 1.6;
+}
+
+
+/* About Mobile */
+
+@media (max-width: 768px) {
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlight {
+        padding: 25px;
+    }
+
+}
