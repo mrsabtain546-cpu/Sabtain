@@ -36,14 +36,16 @@
             SBT<span> Digital Marketing</span>
         </a>
 
-        <ul class="nav-links">
+       <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-
+        <button class="menu-toggle" id="menuToggle">
+    ☰
+</button>
     </div>
 </nav>
 
@@ -284,6 +286,13 @@
     </div>
 
 </footer>
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
 
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+</script>
 </body>
 </html>
