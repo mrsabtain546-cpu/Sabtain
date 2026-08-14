@@ -1117,3 +1117,25 @@ footer p {
     }
 
 }
+/* ================= MOBILE MENU TEXT FIX ================= */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        background: #ffffff !important;
+    }
+
+    .nav-links li a {
+        color: #111111 !important;
+        font-weight: 600 !important;
+    }
+
+    .nav-links li a:hover {
+        color: #007bff !important;
+    }
+
+    .menu-toggle {
+        color: #111111 !important;
+    }
+
+}
