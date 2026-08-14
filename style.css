@@ -1093,3 +1093,27 @@ footer p {
     }
 
 }
+/* ================= MOBILE MENU POSITION FIX ================= */
+
+@media (max-width: 768px) {
+
+    .nav-content {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .menu-toggle {
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+    }
+
+    .logo {
+        margin-right: auto !important;
+    }
+
+}
