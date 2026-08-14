@@ -1139,3 +1139,38 @@ footer p {
     }
 
 }
+/* ================= MOBILE MENU FINAL FIX ================= */
+
+@media (max-width: 768px) {
+
+    /* Mobile menu box */
+    .nav-links.active {
+        background-color: #ffffff !important;
+        z-index: 9999 !important;
+    }
+
+    /* ALL menu links */
+    .nav-links.active li a,
+    .nav-links.active li a:link,
+    .nav-links.active li a:visited {
+        color: #000000 !important;
+        background-color: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        font-weight: 700 !important;
+        text-decoration: none !important;
+    }
+
+    /* Hover */
+    .nav-links.active li a:hover {
+        color: #007bff !important;
+    }
+
+    /* Menu button */
+    .menu-toggle {
+        color: #000000 !important;
+        background: transparent !important;
+    }
+
+}
